@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="39.100411">
+<testcase classname="To validate the login functionality" name="To verify the login with invalid username and valid passwordA." time="0.805387">
+<system-out><![CDATA[And User will hit the URlA..................................................passed
+When User will enter the username and password in the Respective fieldsA....passed
+And User will click the logIn buttonA.......................................passed
+Then User should be Displayed, with the Error PageA.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To verify the login with valid username and valid passwordB.." time="25.02191">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.steps.StepDefinition.user_will_click_the_lOgIn_buttonB(StepDefinition.java:63)&#13;&#10;&#9;at ✽.User will click the lOgIn buttonB..(file:src/test/resources/login.feature:20)&#13;&#10;"><![CDATA[And User will hit the UrlB..................................................passed
+When User will enter the Username and password in the Respective fieldsB....passed
+And User will click the lOgIn buttonB.......................................failed
+Then User should be DisPlayed: with the Error PageB.........................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.steps.StepDefinition.user_will_click_the_lOgIn_buttonB(StepDefinition.java:63)
+	at ✽.User will click the lOgIn buttonB..(file:src/test/resources/login.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality" name="To verify the login with valid username and invalid passwordC!" time="0.011478">
+<system-out><![CDATA[And User will hit the URlC!.................................................passed
+When User will enter the username and password in the Respective fieldsC!...passed
+And User will click the logIn buttonC!......................................passed
+Then User should be Displayed with the Error PageC!.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To verify the login with invalid useRname and invalid passwordD!" time="13.261636">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.steps.StepDefinition.user_will_click_The_lOgIn_buttonD(StepDefinition.java:109)&#13;&#10;&#9;at ✽.User will click The lOgIn buttonD!(file:src/test/resources/login1.feature:14)&#13;&#10;"><![CDATA[And User will hit The UrlD!.................................................passed
+When User will enter The Username and password in the Respective fieldsD!...passed
+And User will click The lOgIn buttonD!......................................failed
+Then User should be DisPlayed with The Error PageD!.........................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.steps.StepDefinition.user_will_click_The_lOgIn_buttonD(StepDefinition.java:109)
+	at ✽.User will click The lOgIn buttonD!(file:src/test/resources/login1.feature:14)
+]]></failure>
+</testcase>
+</testsuite>
